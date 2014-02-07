@@ -1,0 +1,5 @@
+I made a simple project to easily install a ton of gedit styles. I took the
+styles from https://wiki.gnome.org/Projects/GtkSourceView/StyleSchemes and
+created a script that installs them in the current user's folder.
+
+To install, clone this repo and execute install.sh from the folder.

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+  Version 2.0
+
+  Copyright (C) 2009 Holger Koch
+  Author: Holger Koch <http://www.zentralplan.de/kontakt>
+
+  This script is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either
+  version 2 of the License, or (at your option) any later version.
+
+  This script is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Library General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this library; if not, write to the
+  Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+  Boston, MA 02111-1307, USA.
+
+-->
+
+<style-scheme id="greenscreen" _name="GreenScreen" version="1.0">
+
+  <author>Holger Koch</author>
+  <_description>Good for XML/PHP at night</_description>
+
+  <color name="White"                       value="#FFFFFF"/>
+  <color name="BrightGrey"                  value="#DDDDDD"/> <!-- 221/221/221 -->
+  <color name="Grey"                        value="#BBBBBB"/> <!-- 187/187/187 -->
+  <color name="Black"                       value="#000000"/> <!-- 0/0/0 -->
+  <color name="PetrolGrey"                  value="#669988"/>
+  <color name="GreenBlack"                  value="#223322"/> <!-- 34/51/34 -->
+  <color name="GreenGrey"                   value="#334433"/> <!-- 51/68/51 -->
+  <color name="Green"                       value="#99EE00"/> <!-- 153/238/0 -->
+  <color name="GreenYellow"                 value="#CCFF88"/>
+  <color name="Yellow"                      value="#FFFF00"/>
+  <color name="DarkYellow"                  value="#EEEE66"/> <!-- 238/238/102 -->
+  <color name="Orange"                      value="#FFCC00"/> <!-- 255/204/0 -->
+  <color name="Blue"                        value="#99CCFF"/> <!-- 153/204/255 -->
+  <color name="Red"                         value="#DD2200"/> <!-- 221/34/0 -->
+  <color name="LightRed"                    value="#EE5533"/> <!-- 238/85/51 -->
+  <color name="BrightRed"                   value="#EE7766"/> <!-- 238/119/102 -->
+  <color name="Purple"                      value="#EE99FF"/> <!-- 238/153/255 -->
+  <color name="DeepPurple"                  value="#DD66EE"/>
+  <color name="unknown"                     value="#FF88FF"/>
+
+  <!-- General -->
+  <style name="text"                        foreground="White" background="GreenBlack"/>   <!-- main font and canvas -->
+  <style name="selection"                   foreground="Black" background="Orange"/>       <!-- selected text -->
+  <style name="cursor"                      foreground="White"/>                           <!-- cursor -->
+  <style name="current-line"                background="Black"/>                           <!-- current line background -->
+  <style name="line-numbers"                foreground="Black" background="Grey"/>         <!-- line numbers -->
+
+  <!-- Matching -->
+  <style name="bracket-match"               foreground="White" background="Red" bold="true"/>  <!-- matching brackets -->
+  <style name="search-match"                foreground="Black" background="Blue"/>             <!-- search results -->
+
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="BrightGrey" background="GreenGrey" italic="true"/>  <!-- comments -->
+  <style name="def:note"                    foreground="LightRed" bold="true" italic="false"/>              <!-- TODO -->
+  <style name="def:preprocessor"            foreground="Purple"/>                                           <!-- <!DOCTYPE &nbsp; -->
+  <style name="def:error"                   foreground="Yellow" background="Red" bold="true"/>              <!-- error -->
+  <style name="def:underlined"              underline="false"/>
+
+  <!-- Values -->
+  <style name="def:decimal"                 foreground="Purple" bold="true"/>       <!-- integers -->
+  <style name="def:floating-point"          foreground="Purple" bold="true"/>       <!-- floats -->
+  <style name="def:boolean"                 foreground="Purple" bold="true"/>       <!-- TRUE; FALSE -->
+  <style name="def:base-n-integer"          foreground="Blue" bold="true"/>         <!-- chmod 0644 -->
+  <style name="def:string"                  foreground="Green"/>                    <!-- "strings" -->
+  <style name="def:special-char"            foreground="BrightRed" bold="true"/>    <!-- \r\n -->
+
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="Blue"/>                <!-- $var[] -->
+  <style name="def:keyword"                 foreground="Orange" bold="true"/>  <!-- echo; while; etc. -->
+  <style name="def:type"                    foreground="Orange"/>              <!-- array -->
+  <style name="def:statement"               foreground="DarkYellow"/>          <!-- !=&&(),.;+-*/<> -->
+  <style name="def:function"                foreground="Blue"/>                <!-- CSS :hover url() -->
+
+  <!-- Alien -->
+  <style name="def:shebang"                 foreground="BrightRed" bold="true"/>                <!-- shebang -->
+  <style name="def:builtin"                 foreground="Blue" italic="true"/>                   <!-- pearl commands -->
+  <style name="def:constant"                foreground="BrightRed" bold="true" italic="true"/>  <!-- certain integers -->
+  <style name="def:special-constant"        foreground="Blue" italic="true"/>                   <!-- gtkrc bg[NORMAL] -->
+  
+  <!-- Unknown -->
+  <style name="bracket-mismatch"            background="unknown" italic="true"/>
+  <style name="def:doc-comment-element"     background="unknown" italic="true"/>
+  <style name="def:complex"                 background="unknown" italic="true"/>
+  <style name="def:character"               background="unknown" italic="true"/>
+ 
+</style-scheme>
